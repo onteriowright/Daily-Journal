@@ -1,0 +1,76 @@
+body {
+  box-sizing: border-box;
+  background: #2c3e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3498db,
+    #2c3e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3498db,
+    #2c3e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  flex-direction: column;
+}
+.intro {
+  text-align: center;
+  margin: 5px;
+  color: #fff;
+}
+.container {
+  justify-content: center;
+  height: 300px;
+  margin-top: 5em;
+  border: none;
+  color: #fff;
+}
+.form {
+  width: 50%;
+  margin: auto;
+  border: none;
+}
+.date {
+  border: 1.5px solid;
+  padding: 1.2em;
+  width: 95%;
+  justify-content: center;
+  margin: 5px;
+}
+.concepts {
+  border: 1.5px solid;
+  padding: 1.2em;
+  width: 95%;
+  margin: 5px;
+}
+.journal {
+  border: 1.5px solid;
+  padding: 1.2em;
+  width: 95%;
+  margin: 5px;
+}
+.mood {
+  border: 1.5px solid;
+  padding: 1.2em;
+  width: 95%;
+  margin: 5px;
+}
+.btn {
+  position: relative;
+  border: 1.5px;
+  padding: 1.2em;
+  width: 95%;
+  margin: 5px;
+  right: 20px;
+  bottom: 10px;
+}
+.btn-submit {
+  padding: 0.5em;
+  font-size: 20px;
+  color: #fff;
+  background-color: #2f536e;
+}
+.form {
+  padding: 15px;
+}

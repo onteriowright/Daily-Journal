@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Daily Journal</title>
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body>
+    <span class="intro"><h1>Daily Journal</h1></span>
+    <div class="container">
+      <form action="" class="">
+        <fieldset class="form">
+          <div class="date">
+            <label for="journal-date">Date of entry</label><br />
+            <input type="date" name="journal-date" id="journal-date" />
+          </div>
+          <div class="concepts">
+            <label for="concepts-covered">Concepts Covered</label><br />
+            <input type="text" name="concepts-covered" id="concepts-covered" />
+          </div>
+          <div class="journal">
+            <label for="journal-entry">Journal Entry</label><br />
+            <textarea
+              name="journal-entry"
+              id="journal-entry"
+              cols="30"
+              rows="0"
+            ></textarea>
+          </div>
+          <div class="mood">
+            <label for="mood">Mood for the day</label><br />
+            <select name="mood" id="mood">
+              <option value="happy">Happy</option>
+              <option value="mad">Mad</option>
+              <option value="sad">Sad</option>
+            </select>
+          </div>
+          <div class="btn">
+            <input
+              id="submit"
+              class="btn-submit"
+              type="button"
+              value="Submit journal entry  "
+            />
+          </div>
+        </fieldset>
+      </form>
+      <section class="entryLog"></section>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>
