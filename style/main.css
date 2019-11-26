@@ -31,14 +31,13 @@ body {
   margin: auto;
   border: none;
 }
-.date {
+.entries {
   border: 1.5px solid;
   padding: 1.2em;
   width: 95%;
-  justify-content: center;
   margin: 5px;
 }
-.concepts {
+/* .concepts {
   border: 1.5px solid;
   padding: 1.2em;
   width: 95%;
@@ -55,7 +54,7 @@ body {
   padding: 1.2em;
   width: 95%;
   margin: 5px;
-}
+} */
 .btn {
   position: relative;
   border: 1.5px;
