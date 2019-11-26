@@ -1,3 +1,5 @@
+//This function creates the template that will be displayed on the DOM
+
 const JournalEntryComponent = entry => {
   return `
     <section id="entry--${entry.id}" class="form">

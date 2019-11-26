@@ -6,7 +6,6 @@
  *      the entries for different purposes.
  */
 
-// This is the original data. Can't Touch This.
 const entries = [
   {
     date: "11/7/2019",
@@ -44,7 +43,7 @@ const entries = [
 ];
 
 /*
-  You export a function that provides a version of the
+  This function provides a version of the
   raw data in the format that you want
 */
 export const useJournalEntries = () => {
