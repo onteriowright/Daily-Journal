@@ -1,6 +1,6 @@
-import JournalEntryListComponent from "./JournalEntryListComponent.js";
-import SavedJournalEntryListComponent from "./SavedJournalEntryListComponent.js";
-import { getEntries } from "./JournalDataProviderComponent.js";
+import JournalEntryListComponent from "./DailyJournalComponents/JournalEntryListComponent.js";
+import SavedJournalEntryListComponent from "./DailyJournalComponents/SavedJournalEntryListComponent.js";
+import { getEntries } from "./DailyJournalComponents/JournalDataProviderComponent.js";
 
 JournalEntryListComponent();
 getEntries().then(SavedJournalEntryListComponent);
