@@ -55,3 +55,15 @@ body {
 .form {
   padding: 15px;
 }
+.notes-title {
+  text-align: center;
+  font-size: 2em;
+}
+.saved-notes {
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted;
+  margin: 1em;
+  font-size: 20px;
+  padding: 2em;
+}

@@ -20,6 +20,7 @@ const JournalEntryListComponent = () => {
   eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "show-entries") {
       const customEventListener = new CustomEvent("showBtnWasClicked");
+      clickEvent.preventDefault();
       eventHub.dispatchEvent(customEventListener);
     }
   });

@@ -22,14 +22,15 @@ const JournalComponent = () => {
     <div class="entries">
       <label for="mood">Mood for the day</label><br />
       <select name="mood" id="mood">
-        <option value="happy">Happy</option>
-        <option value="mad">Mad</option>
-        <option value="sad">Sad</option>
-        <option value="frustrated">Frustrated</option>
-        <option value="anxious">Anxious</option>
-        <option value="excited">Excited</option>
-        <option value="furious">Furious</option>
-        <option value="feelingLikeABoss">Feeling Like A Boss!</option>
+        <option value="Happy">Happy</option>
+        <option value="Mad">Mad</option>
+        <option value="Sad">Sad</option>
+        <option value="Frustrated">Frustrated</option>
+        <option value="Anxious">Anxious</option>
+        <option value="Excited">Excited</option>
+        <option value="Furious">Furious</option>
+        <option value="Content">Content</option>
+        <option value="Feeling Like A Boss">Feeling Like A Boss!</option>
       </select>
     </div>
     <div class="btn">
@@ -40,9 +41,9 @@ const JournalComponent = () => {
         value="Submit journal entry  "
       />
       <button id="show-entries" class="btn-submit">Show Entries</button>
-    </div>
-  </fieldset>
-</form>
+      </div>
+      </fieldset>
+      </form>
   `;
 };
 export default JournalComponent;

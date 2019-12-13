@@ -18,8 +18,8 @@ const SavedJournalEntryListComponent = () => {
 
 const renderData = entriesCollection => {
   entryHTML.innerHTML = `
-        <h2>Notes:</h2>
         <section>
+          <h2 class="notes-title">Notes:</h2>
           ${entriesCollection
             .map(entry => SavedJournalEntryComponent(entry))
             .join("")}
