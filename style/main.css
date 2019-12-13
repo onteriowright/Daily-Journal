@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Averia+Sans+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
 body {
   box-sizing: border-box;
   background: #2c3e50; /* fallback for old browsers */
@@ -13,6 +15,11 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   flex-direction: column;
+  font-family: "Work Sans", sans-serif;
+}
+.heading-title {
+  font-family: "Averia Sans Libre", cursive;
+  font-size: 1.5em;
 }
 .intro {
   text-align: center;
@@ -51,6 +58,7 @@ body {
   font-size: 20px;
   color: #fff;
   background-color: #2f536e;
+  font-family: "Work Sans", sans-serif;
 }
 .form {
   padding: 15px;
@@ -64,6 +72,6 @@ body {
   flex-direction: column;
   border: 1px dotted;
   margin: 1em;
-  font-size: 20px;
+  font-size: 1.1em;
   padding: 2em;
 }

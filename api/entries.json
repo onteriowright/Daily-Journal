@@ -2,7 +2,7 @@
   "entries": [
     {
       "date": "2019-12-12",
-      "concepts": "Custom Event Listener",
+      "concepts": "Custom Event Listeners",
       "textArea": "I learned how to create and dispatch a custom event to the DOM so other components can listen for it. I also learned about event bubbling.",
       "mood": "Happy",
       "id": 1
