@@ -16,7 +16,7 @@ const JournalComponent = () => {
         name="journal-entry"
         id="journal-entry"
         cols="30"
-        rows="0"
+        rows="4"
       ></textarea>
     </div>
     <div class="entries">
