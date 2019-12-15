@@ -6,48 +6,6 @@
       "textArea": "I learned how to create and dispatch a custom event to the DOM so other components can listen for it. I also learned about event bubbling.",
       "mood": "Happy",
       "id": 1
-    },
-    {
-      "date": "",
-      "concepts": "",
-      "textArea": "",
-      "mood": "Happy",
-      "id": 2
-    },
-    {
-      "date": "",
-      "concepts": "",
-      "textArea": "",
-      "mood": "Happy",
-      "id": 3
-    },
-    {
-      "date": "",
-      "concepts": "",
-      "textArea": "",
-      "mood": "Happy",
-      "id": 4
-    },
-    {
-      "date": "",
-      "concepts": "",
-      "textArea": "",
-      "mood": "Happy",
-      "id": 5
-    },
-    {
-      "date": "",
-      "concepts": "",
-      "textArea": "",
-      "mood": "Happy",
-      "id": 6
-    },
-    {
-      "date": "2019-12-14",
-      "concepts": "",
-      "textArea": "",
-      "mood": "Feeling Like A Boss",
-      "id": 7
     }
   ]
 }
