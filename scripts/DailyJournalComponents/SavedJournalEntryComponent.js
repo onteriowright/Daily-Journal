@@ -1,10 +1,10 @@
 const SavedJournalEntryComponent = entry => {
   return `
     <section class="saved-notes">
-        <div class="saved"><h4>Date:</h4> ${entry.date}</div>
-        <div class="saved"><h4>Concept:</h4> ${entry.concepts}</div>
-        <div class="saved"><h4>Entry:</h4> ${entry.textArea}</div>
-        <div class="saved"><h4>Mood:</h4> ${entry.mood}</div>
+        <div class="saved"><span class="saved-note">Date:</span> ${entry.date}</div>
+        <div class="saved"><span class="saved-note">Concept:</span> ${entry.concepts}</div>
+        <div class="saved textarea"><span class="saved-note">Entry:</span> ${entry.textArea}</div>
+        <div class="saved"><span class="saved-note">Mood:</span> ${entry.mood}</div>
     </section>
   `;
 };
