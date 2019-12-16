@@ -1,6 +1,7 @@
 import {
   useSavedJournalEntries,
-  getEntries
+  getEntries,
+  deleteEntries
 } from "./JournalDataProviderComponent.js";
 import SavedJournalEntryComponent from "./SavedJournalEntryComponent.js";
 
@@ -15,6 +16,16 @@ const SavedJournalEntryListComponent = () => {
     });
   });
 };
+
+eventHub.addEventListener("click", clickEvent => {
+  if (clickEvent.target.id.startsWith("deleteEntry--")) {
+    const [prefix, id] = clickEvent.target.id.split("--");
+    deleteEntries(id).then(() => {
+      const newEntry = useSavedJournalEntries();
+      renderData(newEntry);
+    });
+  }
+});
 
 const renderData = entriesCollection => {
   entryHTML.innerHTML = `

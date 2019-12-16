@@ -3,9 +3,16 @@
     {
       "date": "2019-12-12",
       "concepts": "Custom Event Listeners",
-      "textArea": "I learned how to create and dispatch a custom event to the DOM so other components can listen for it. I also learned about event bubbling.",
+      "textArea": "I learned about coupling and decoupling. I learned how to create a Custom Event for best practices. By using a Custom Event and creating an event hub, components never talk directly to each other, meaning to each other they don't exist. They communicate directly through the event hub. Since the only thing they have in common is the event hub, changes can be made to each one without breaking the code. Each component only listens to what it wants to listen to.",
       "mood": "Happy",
       "id": 1
+    },
+    {
+      "date": "2019-12-16",
+      "concepts": "Group Project",
+      "textArea": "Today we start a group project. We are going to build an application for a user to create a traveling itinerary using the skills we have learned so far. ",
+      "mood": "Excited",
+      "id": 2
     }
   ]
 }

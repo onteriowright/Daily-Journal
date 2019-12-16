@@ -18,6 +18,12 @@ export const savedEntries = entry => {
   }).then(getEntries);
 };
 
+export const deleteEntries = entryId => {
+  return fetch(`http://localhost:8088/entries/${entryId}`, {
+    method: "DELETE"
+  }).then(getEntries);
+};
+
 export const getEntries = () => {
   return fetch("http://localhost:8088/entries")
     .then(response => response.json())

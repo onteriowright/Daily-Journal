@@ -60,6 +60,11 @@ body {
   background-color: #2f536e;
   font-family: "Work Sans", sans-serif;
 }
+.delete-btn {
+  width: 10%;
+  height: 30px;
+  margin: auto;
+}
 .notes-title {
   text-align: center;
   font-size: 2em;
