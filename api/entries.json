@@ -13,6 +13,20 @@
       "textArea": "Today we start a group project. We are going to build an application for a user to create a traveling itinerary using the skills we have learned so far. ",
       "mood": "Excited",
       "id": 2
+    },
+    {
+      "date": "2019-12-17",
+      "concepts": "External API's",
+      "textArea": "Continuing group project, I learned how to grab data from an external API. With that data i populated my dropdown menu.",
+      "mood": "Happy",
+      "id": 3
+    },
+    {
+      "date": "2019-12-18",
+      "concepts": "Group Project",
+      "textArea": "Yesterday was great! I added an custom event listener to my drop down and i listened for a click on the save Itinerary button that will save the new Itinerary to my local API. But today has been a little challenging trying to figure out how to get the data from the json to populate in the aside view. It's a little challenging but i will conquer! Besides that the NPS API went down, so i learned how to create dummy data to keep the workflow going.",
+      "mood": "Content",
+      "id": 4
     }
   ]
 }
