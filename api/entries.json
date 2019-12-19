@@ -27,6 +27,13 @@
       "textArea": "Yesterday was great! I added an custom event listener to my drop down and i listened for a click on the save Itinerary button that will save the new Itinerary to my local API. But today has been a little challenging trying to figure out how to get the data from the json to populate in the aside view. It's a little challenging but i will conquer! Besides that the NPS API went down, so i learned how to create dummy data to keep the workflow going.",
       "mood": "Content",
       "id": 4
+    },
+    {
+      "date": "2019-12-19",
+      "concepts": "Group Project",
+      "textArea": "Yesterday i learned that communication is key! I feel that as a group we wasted alot of time working on the same feature. The good thing is we got it working, so i learned how to save information to my local json and also post that information to the aside section of the website. Today i plan to take on the weather API so that when i choose a specific state park it show the current weather for that park.",
+      "mood": "Content",
+      "id": 5
     }
   ]
 }
