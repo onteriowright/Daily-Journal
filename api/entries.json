@@ -34,6 +34,13 @@
       "textArea": "Yesterday i learned that communication is key! I feel that as a group we wasted alot of time working on the same feature. The good thing is we got it working, so i learned how to save information to my local json and also post that information to the aside section of the website. Today i plan to take on the weather API so that when i choose a specific state park it show the current weather for that park.",
       "mood": "Content",
       "id": 5
+    },
+    {
+      "date": "2020-01-06",
+      "concepts": "CRUD",
+      "textArea": "Today I learned how to edit my CRUD application.",
+      "mood": "Excited",
+      "id": 6
     }
   ]
 }
