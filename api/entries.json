@@ -41,6 +41,13 @@
       "textArea": "Today I learned how to edit my CRUD application.",
       "mood": "Excited",
       "id": 6
+    },
+    {
+      "date": "2020-01-08",
+      "concepts": "ERD",
+      "textArea": "Today we are going to learn about Entity-Relationship Diagrams. I'll be able to tell you more about that tomorrow. Hopefully by the end of today i will have added an edit feature to my daily journal in order to edit my entries.",
+      "mood": "Excited",
+      "id": 7
     }
   ]
 }
