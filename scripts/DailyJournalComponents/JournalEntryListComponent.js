@@ -23,21 +23,29 @@ const JournalEntryListComponent = () => {
     document.querySelector("#journal-date").value = foundEntry.date;
     document.querySelector("#concepts-covered").value = foundEntry.concepts;
     document.querySelector("#journal-entry").value = foundEntry.textArea;
-    document.querySelector("#mood").value = foundEntry.mood;
+    document.querySelector("#select-mood").value = foundEntry.mood;
   });
 
   eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "submit") {
+      if (
+        document.querySelector("#journal-date").value === "" ||
+        document.querySelector("#concepts-covered").value === "" ||
+        document.querySelector("#journal-entry").value === "" ||
+        document.querySelector("#select-mood").value === "0"
+      ) {
+        alert("Please Fill Out All Fields!");
+        return;
+      }
       const hiddenValue = document.querySelector("#hidden-input").value;
       if (hiddenValue !== "") {
         const editedEntry = {
-          id: parseInt(document.querySelector("#hidden-input").value),
+          id: document.querySelector("#hidden-input").value,
           date: document.querySelector("#journal-date").value,
           concepts: document.querySelector("#concepts-covered").value,
           textArea: document.querySelector("#journal-entry").value,
-          mood: document.querySelector("#mood").value
+          mood: document.querySelector("#select-mood").value
         };
-        console.log(editedEntry);
         editNotes(editedEntry).then(() => {
           const message = new CustomEvent("entryHasBeenEdited");
           eventHub.dispatchEvent(message);
@@ -47,7 +55,7 @@ const JournalEntryListComponent = () => {
           date: document.querySelector("#journal-date").value,
           concepts: document.querySelector("#concepts-covered").value,
           textArea: document.querySelector("#journal-entry").value,
-          mood: document.querySelector("#mood").value
+          mood: document.querySelector("#select-mood").value
         };
         savedEntries(newEntry);
       }
