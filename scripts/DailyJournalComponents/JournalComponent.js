@@ -2,6 +2,7 @@ const JournalComponent = () => {
   return `
   <form action="" class="" id="entryForm">
   <fieldset class="form">
+  <input id="hidden-input" type="hidden">
     <div class="entries">
       <label for="journal-date">Date of entry</label><br />
       <input type="date" name="journal-date" id="journal-date" />

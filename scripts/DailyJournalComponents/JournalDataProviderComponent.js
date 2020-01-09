@@ -18,6 +18,16 @@ export const savedEntries = entry => {
   }).then(getEntries);
 };
 
+export const editNotes = entryObject => {
+  return fetch(`http://localhost:8088/entries/${entryObject.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(entryObject)
+  }).then(getEntries);
+};
+
 export const deleteEntries = entryId => {
   return fetch(`http://localhost:8088/entries/${entryId}`, {
     method: "DELETE"

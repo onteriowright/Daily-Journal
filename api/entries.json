@@ -48,6 +48,13 @@
       "textArea": "Today we are going to learn about Entity-Relationship Diagrams. I'll be able to tell you more about that tomorrow. Hopefully by the end of today i will have added an edit feature to my daily journal in order to edit my entries.",
       "mood": "Excited",
       "id": 7
+    },
+    {
+      "date": "2020-01-09",
+      "concepts": "ERD",
+      "textArea": "Yesterday i learned about ERD's (Entity-Reltionship Diagram's).\nI also learned how to connect my data with PK's (Primary Keys) and FK's (Foreign Keys). I learned about \"One to many\" and \"many to many (joined tables).",
+      "mood": "Happy",
+      "id": 8
     }
   ]
 }
