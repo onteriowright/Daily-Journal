@@ -1,10 +1,10 @@
 import {
   savedEntries,
-  getEntries,
   useSavedJournalEntries,
   editNotes
 } from "./JournalDataProviderComponent.js";
 import JournalComponent from "./JournalComponent.js";
+import { UseMoods } from "./MoodDataProvider.js";
 
 const JournalEntryListComponent = () => {
   const eventHub = document.querySelector("#container");
@@ -62,9 +62,11 @@ const JournalEntryListComponent = () => {
     }
   });
 
+  const useMoods = UseMoods();
+
   journalHTMl.innerHTML = `
     <section>
-      ${JournalComponent()}
+      ${JournalComponent(useMoods, useMoods)}
     </section>
   `;
 };

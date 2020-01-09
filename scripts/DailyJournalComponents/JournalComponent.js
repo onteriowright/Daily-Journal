@@ -1,4 +1,4 @@
-const JournalComponent = () => {
+const JournalComponent = (selectMood, filterMood) => {
   return `
   <form action="" class="" id="entryForm">
   <fieldset class="form">
@@ -22,17 +22,22 @@ const JournalComponent = () => {
     </div>
     <div class="entries">
       <label for="mood">Mood for the day</label><br />
-      <select name="mood" id="mood">
-        <option value="Happy">Happy</option>
-        <option value="Mad">Mad</option>
-        <option value="Sad">Sad</option>
-        <option value="Frustrated">Frustrated</option>
-        <option value="Anxious">Anxious</option>
-        <option value="Excited">Excited</option>
-        <option value="Furious">Furious</option>
-        <option value="Content">Content</option>
-        <option value="Feeling Like A Boss">Feeling Like A Boss!</option>
+      <select name="mood" id="select-mood">
+        <option value="0">Please Choose A Mood.....</option>
+        ${selectMood
+          .map(mood => `<option value="${mood}">${mood}</option>`)
+          .join("")}
       </select>
+    </div>
+    <div class="entries">
+     ${filterMood
+       .map(
+         mood => `
+     <input id="radio-${mood}" type="radio" value="${mood}" name="mood">
+     <label for="${mood}">${mood}</label>
+     `
+       )
+       .join("")}
     </div>
     <div class="btn">
       <input
