@@ -55,6 +55,13 @@
       "textArea": "Yesterday i learned about ERD's (Entity-Reltionship Diagram's).\nI also learned how to connect my data with PK's (Primary Keys) and FK's (Foreign Keys). I learned about \"One to many\" and \"many to many (joined tables).",
       "mood": "Happy",
       "id": 8
+    },
+    {
+      "id": 9,
+      "date": "2020-01-10",
+      "concepts": "ERD's",
+      "textArea": "Today was a lab day. I'm still learning ERD's and right now they're kicking my butt at the moment but, i SHALL OVERCOME! ",
+      "mood": "Content"
     }
   ]
 }
