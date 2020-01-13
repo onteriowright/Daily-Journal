@@ -9,14 +9,9 @@ const SavedJournalEntryListComponent = () => {
   const eventHub = document.querySelector("#container");
   const entryHTML = document.querySelector("#entryLog");
   const showBtn = document.querySelector("#show-entries");
+  const hiddenValue = document.querySelector("#hidden-input");
 
   eventHub.addEventListener("click", clickEvent => {
-    // if (entryHTML.textContent === "") {
-    //   showBtn.textContent = "Hide Entries";
-    // } else {
-    //   showBtn.textContent = "Show Entries";
-    // }
-
     if (clickEvent.target.id.startsWith("editEntry--")) {
       const [prefix, entryId] = clickEvent.target.id.split("--");
       const newMessage = new CustomEvent("editEntryClicked", {
@@ -39,7 +34,16 @@ const SavedJournalEntryListComponent = () => {
   });
 
   eventHub.addEventListener("entry-saved-update", clickEvent => {
-    if (showBtn.innerHTML === "Show Entries" && entryHTML.innerHTML === "") {
+    document.querySelector("#journal-date").value = "";
+    document.querySelector("#concepts-covered").value = "";
+    document.querySelector("#journal-entry").value = "";
+    document.querySelector("#select-mood").value = "";
+
+    if (
+      showBtn.innerHTML === "Hide Entries" ||
+      (showBtn.innerHTML === "Show Entries" && entryHTML.innerHTML !== "") ||
+      entryHTML.innerHTML === ""
+    ) {
       showBtn.innerHTML = "Hide Entries";
       reRenderData();
     } else {
@@ -52,6 +56,12 @@ const SavedJournalEntryListComponent = () => {
   });
 
   eventHub.addEventListener("entryHasBeenEdited", clickEvent => {
+    document.querySelector("#journal-date").value = "";
+    document.querySelector("#concepts-covered").value = "";
+    document.querySelector("#journal-entry").value = "";
+    document.querySelector("#select-mood").value = "";
+
+    hiddenValue.value = "";
     if (
       showBtn.innerHTML === "Hide Entries" ||
       (showBtn.innerHTML === "Show Entries" && entryHTML.innerHTML !== "") ||
@@ -66,10 +76,6 @@ const SavedJournalEntryListComponent = () => {
 
     const updateEntries = useSavedJournalEntries();
     renderData(updateEntries);
-  });
-
-  eventHub.addEventListener("notedCreated", clickEvent => {
-    reRenderData();
   });
 
   eventHub.addEventListener("showBtnWasClicked", () => {
