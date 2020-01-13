@@ -8,8 +8,15 @@ import SavedJournalEntryComponent from "./SavedJournalEntryComponent.js";
 const SavedJournalEntryListComponent = () => {
   const eventHub = document.querySelector("#container");
   const entryHTML = document.querySelector("#entryLog");
+  const showBtn = document.querySelector("#show-entries");
 
   eventHub.addEventListener("click", clickEvent => {
+    // if (entryHTML.textContent === "") {
+    //   showBtn.textContent = "Hide Entries";
+    // } else {
+    //   showBtn.textContent = "Show Entries";
+    // }
+
     if (clickEvent.target.id.startsWith("editEntry--")) {
       const [prefix, entryId] = clickEvent.target.id.split("--");
       const newMessage = new CustomEvent("editEntryClicked", {
@@ -31,7 +38,32 @@ const SavedJournalEntryListComponent = () => {
     }
   });
 
+  eventHub.addEventListener("entry-saved-update", clickEvent => {
+    if (showBtn.innerHTML === "Show Entries" && entryHTML.innerHTML === "") {
+      showBtn.innerHTML = "Hide Entries";
+      reRenderData();
+    } else {
+      showBtn.innerHTML = "Show Entries";
+      entryHTML.innerHTML = "";
+    }
+
+    const updatedEntries = useSavedJournalEntries();
+    renderData(updatedEntries);
+  });
+
   eventHub.addEventListener("entryHasBeenEdited", clickEvent => {
+    if (
+      showBtn.innerHTML === "Hide Entries" ||
+      (showBtn.innerHTML === "Show Entries" && entryHTML.innerHTML !== "") ||
+      entryHTML.innerHTML === ""
+    ) {
+      showBtn.innerHTML = "Hide Entries";
+      reRenderData();
+    } else {
+      showBtn.innerHTML = "Show Entries";
+      entryHTML.innerHTML = "";
+    }
+
     const updateEntries = useSavedJournalEntries();
     renderData(updateEntries);
   });
@@ -41,7 +73,13 @@ const SavedJournalEntryListComponent = () => {
   });
 
   eventHub.addEventListener("showBtnWasClicked", () => {
-    reRenderData();
+    if (showBtn.innerHTML === "Show Entries" && entryHTML.innerHTML === "") {
+      showBtn.innerHTML = "Hide Entries";
+      reRenderData();
+    } else {
+      showBtn.innerHTML = "Show Entries";
+      entryHTML.innerHTML = "";
+    }
   });
 
   const reRenderData = () => {
@@ -54,7 +92,7 @@ const SavedJournalEntryListComponent = () => {
   const renderData = entriesCollection => {
     entryHTML.innerHTML = `
         <section>
-          <h2 class="notes-title">Notes:</h2>
+          <h2 class="notes-title">Entries:</h2>
           ${entriesCollection
             .map(entry => SavedJournalEntryComponent(entry))
             .join("")}

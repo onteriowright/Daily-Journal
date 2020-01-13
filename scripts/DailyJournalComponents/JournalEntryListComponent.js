@@ -57,7 +57,10 @@ const JournalEntryListComponent = () => {
           textArea: document.querySelector("#journal-entry").value,
           mood: document.querySelector("#select-mood").value
         };
-        savedEntries(newEntry);
+        savedEntries(newEntry).then(() => {
+          const entrySavedCustomEvent = new CustomEvent("entry-saved-update");
+          eventHub.dispatchEvent(entrySavedCustomEvent);
+        });
       }
     }
   });
@@ -74,7 +77,7 @@ const JournalEntryListComponent = () => {
 
   journalHTMl.innerHTML = `
     <section>
-      ${JournalComponent(useMoods, useMoods)}
+      ${JournalComponent(useMoods)}
     </section>
   `;
 };

@@ -39,7 +39,7 @@ body {
   border: none;
 }
 .entries {
-  border: 1.5px solid;
+  border: 1.5px dotted;
   padding: 1.2em;
   width: 95%;
   margin: 5px;
@@ -67,6 +67,9 @@ body {
 }
 .journal-btns {
   display: flex;
+}
+.legend {
+  font-size: 30px;
 }
 .notes-title {
   text-align: center;
