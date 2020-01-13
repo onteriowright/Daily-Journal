@@ -62,6 +62,13 @@
       "concepts": "ERD's",
       "textArea": "Today was a lab day. I'm still learning ERD's and right now they're kicking my butt at the moment but, i SHALL OVERCOME! ",
       "mood": "Content"
+    },
+    {
+      "id": 10,
+      "date": "2020-01-13",
+      "concepts": "ERD's",
+      "textArea": "Friday i started an excercise using my ERD as a guide. It's coming along and i'm slowly starting to grasp the concepts. It's taking a little time, but im getting there!",
+      "mood": "Content"
     }
   ]
 }
