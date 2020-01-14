@@ -22,7 +22,7 @@ const JournalComponent = (selectMood, filterMood) => {
       </div>
       <div class="entries">
         <label for="mood">Mood for the day</label><br />
-        <select name="mood" id="select-mood">
+        <select name="select-mood" id="select-mood">
           <option value="0">Please Choose A Mood.....</option>
           ${selectMood
             .map(mood => `<option value="${mood}">${mood}</option>`)

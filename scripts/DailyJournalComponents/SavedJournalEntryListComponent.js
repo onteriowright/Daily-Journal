@@ -37,7 +37,7 @@ const SavedJournalEntryListComponent = () => {
     document.querySelector("#journal-date").value = "";
     document.querySelector("#concepts-covered").value = "";
     document.querySelector("#journal-entry").value = "";
-    document.querySelector("#select-mood").value = "";
+    document.querySelector("#select-mood").value = "0";
 
     if (
       showBtn.innerHTML === "Hide Entries" ||
@@ -59,7 +59,7 @@ const SavedJournalEntryListComponent = () => {
     document.querySelector("#journal-date").value = "";
     document.querySelector("#concepts-covered").value = "";
     document.querySelector("#journal-entry").value = "";
-    document.querySelector("#select-mood").value = "";
+    document.querySelector("#select-mood").value = "0";
 
     hiddenValue.value = "";
     if (
