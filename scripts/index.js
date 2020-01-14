@@ -3,7 +3,7 @@ import SavedJournalEntryListComponent from "./DailyJournalComponents/SavedJourna
 import { getEntries } from "./DailyJournalComponents/JournalDataProviderComponent.js";
 import { FilterListComponent } from "./DailyJournalComponents/FilterListComponent.js";
 
-JournalEntryListComponent();
 getEntries()
+  .then(JournalEntryListComponent)
   .then(SavedJournalEntryListComponent)
   .then(FilterListComponent);
