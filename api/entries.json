@@ -62,6 +62,13 @@
       "concepts": "ERD's",
       "textArea": "Friday i started an excercise using my ERD as a guide. It's coming along and i'm slowly starting to grasp the concepts. It's taking a little time, but im getting there!",
       "mood": "Content"
+    },
+    {
+      "date": "2020-01-16",
+      "concepts": "Working on Group Project",
+      "textArea": "My team started nutshell using all the tools that we have learned thus far. Including, ERD's, Dependency Graphs, Modular JavaScript and CRUD.",
+      "mood": "Excited",
+      "id": 11
     }
   ]
 }
