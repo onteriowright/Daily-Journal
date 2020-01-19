@@ -69,6 +69,13 @@
       "textArea": "My team started nutshell using all the tools that we have learned thus far. Including, ERD's, Dependency Graphs, Modular JavaScript and CRUD.",
       "mood": "Excited",
       "id": 11
+    },
+    {
+      "date": "2020-01-19",
+      "concepts": "Group Project",
+      "textArea": "I learned expand and embed when calling API's. I learned that planning make things so much more efficient. We have reached MVP with the nutshell project.",
+      "mood": "Excited",
+      "id": 12
     }
   ]
 }
