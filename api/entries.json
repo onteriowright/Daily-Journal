@@ -88,8 +88,15 @@
       "id": 14,
       "date": "2020-02-13",
       "concepts": "Capstone",
-      "textArea": "The last 2 weeks have been pretty stressful, but today my MVP was approve!!!",
+      "textArea": "The last 2 weeks have been pretty stressful, but today my MVP was approved!!!",
       "mood": "Feeling Like A Boss!"
+    },
+    {
+      "id": 15,
+      "date": "2020-03-02",
+      "concepts": "C#",
+      "textArea": "C# is a monster. We are covering Loops, Dictionaries, and Lists. I'll get it. It's just all still new to me. It's similar to JavaScript, but way more type strict.",
+      "mood": "Content"
     }
   ]
 }
