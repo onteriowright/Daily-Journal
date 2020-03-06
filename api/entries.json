@@ -97,6 +97,13 @@
       "concepts": "C#",
       "textArea": "C# is a monster. We are covering Loops, Dictionaries, and Lists. I'll get it. It's just all still new to me. It's similar to JavaScript, but way more type strict.",
       "mood": "Content"
+    },
+    {
+      "date": "2020-03-06",
+      "concepts": "C#  Classes",
+      "textArea": "I'm starting to get a better understanding of C#. It's taking a minute, but i'm getting there!",
+      "mood": "Excited",
+      "id": 16
     }
   ]
 }
