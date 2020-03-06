@@ -1,6 +1,9 @@
 import { FilterComponent } from "./FilterComponent.js";
 import SavedJournalEntryComponent from "./SavedJournalEntryComponent.js";
-import { useSavedJournalEntries, getEntries } from "./JournalDataProviderComponent.js";
+import {
+  useSavedJournalEntries,
+  getEntries
+} from "./JournalDataProviderComponent.js";
 import { UseFilteredMoods } from "./FilterMoodsDataProvider.js";
 
 export const FilterListComponent = () => {
@@ -23,7 +26,11 @@ export const FilterListComponent = () => {
 
       const filterMood = useEntries.filter(entry => entry.mood === mood);
 
-      if (showBtn.innerHTML === "Hide Entries" || (showBtn.innerHTML === "Show Entries" && entryHTML.innerHTML !== "") || entryHTML.innerHTML === "") {
+      if (
+        showBtn.innerHTML === "Hide Entries" ||
+        (showBtn.innerHTML === "Show Entries" && entryHTML.innerHTML !== "") ||
+        entryHTML.innerHTML === ""
+      ) {
         showBtn.innerHTML = "Hide Entries";
         renderMoodData(filterMood);
       } else {
@@ -37,7 +44,9 @@ export const FilterListComponent = () => {
     entryHTML.innerHTML = `
         <section>
           <h2 class="notes-title">Entries:</h2>
-          ${entriesCollection.map(entry => SavedJournalEntryComponent(entry)).join("")}
+          ${entriesCollection
+            .map(entry => SavedJournalEntryComponent(entry))
+            .join("")}
         </section>
       `;
   };
