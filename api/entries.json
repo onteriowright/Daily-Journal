@@ -104,6 +104,13 @@
       "textArea": "I'm starting to get a better understanding of C#. It's taking a minute, but i'm getting there!",
       "mood": "Excited",
       "id": 16
+    },
+    {
+      "id": 17,
+      "date": "2020-03-11",
+      "concepts": "Inheritance and Interfaces",
+      "textArea": "Yesterday was a good day! We learned about Inheritance and Interfaces. I'm feeling a lot better about C#!",
+      "mood": "Excited"
     }
   ]
 }
